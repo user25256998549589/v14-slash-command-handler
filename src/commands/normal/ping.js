@@ -1,6 +1,6 @@
-const { EmbedBuilder, PermissionsBitField } = require("discord.js");
+import { EmbedBuilder, PermissionsBitField } from"discord.js"
 
-module.exports = {
+export default {
     name: "ping",
     aliases: ["pong"],
     cooldown: 5000,//1 saniye = 1000 ms / cooldown olmasını istemezseniz 0 yazın.

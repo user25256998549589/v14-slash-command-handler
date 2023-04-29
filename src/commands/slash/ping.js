@@ -1,12 +1,12 @@
-const { EmbedBuilder, PermissionsBitField } = require("discord.js");
-const { SlashCommandBuilder } = require("@discordjs/builders");
+import { EmbedBuilder, PermissionsBitField } from "discord.js"
+import { SlashCommandBuilder } from "@discordjs/builders"
 
-module.exports = {
+export default {
   data: new SlashCommandBuilder()
     .setName("ping")
     .setDescription("Pong!"),
-    // komutu geliştirmek istersen guide: https://discordjs.guide/slash-commands/advanced-creation.html
-    run: async (client, interaction) => {
-      interaction.reply(`Pong 🏓`)
-    }
- };
+  // komutu geliştirmek istersen guide: https://discordjs.guide/slash-commands/advanced-creation.html
+  run: async (client, interaction) => {
+    interaction.reply(`Pong 🏓`)
+  }
+};

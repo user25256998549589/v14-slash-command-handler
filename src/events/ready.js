@@ -1,8 +1,14 @@
-const { ActivityType } = require("discord.js")
-module.exports = {
+import { ActivityType } from "discord.js"
+import { EmbedBuilder, PermissionsBitField } from "discord.js"
+import { SlashCommandBuilder, StringSelectMenuBuilder, StringSelectMenuOptionBuilder, ActionRowBuilder } from "@discordjs/builders"
+import numberSplit from "number-split"
+
+export default {
 	name: 'ready',
 	once: true,
-	execute(client) {
-    let activities = [ `Developed by memte#0996`, `${client.user.username}` ], i = 0;
-    setInterval(() => client.user.setActivity({ name: `${activities[i++ % activities.length]}`, type: ActivityType.Listening }), 22000);
-}};
+	async execute(client) {
+
+
+
+	}
+};
